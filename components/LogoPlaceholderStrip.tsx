@@ -1,1 +1,2 @@
-export function LogoPlaceholderStrip(){return <aside className="strip" aria-label="Future client logos"><div className="shell"><h2>AUTHORISED CLIENT LOGOS</h2><p style={{margin:0,color:"#56564e",fontSize:13}}>Logo placements are intentionally reserved until authorisation is confirmed.</p></div></aside>}
+import {Building2} from "lucide-react";
+export function LogoPlaceholderStrip(){return <aside className="strip" aria-label="Future client logos"><div className="shell"><h2>AUTHORISED CLIENT LOGOS</h2><div className="logoRow" aria-hidden="true">{Array.from({length:5}).map((_,i)=><span className="logoSlot" key={i}><Building2/></span>)}</div><p className="stripNote">Logo placements are intentionally reserved until authorisation is confirmed.</p></div></aside>}
