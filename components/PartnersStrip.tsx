@@ -1,0 +1,2 @@
+const partners=[{name:"Microsoft"},{name:"Zoho"},{name:null},{name:null}];
+export function PartnersStrip(){return <aside className="strip" aria-label="Our partners"><div className="shell"><h2>OUR PARTNERS</h2><div className="partnerRow">{partners.map((p,i)=>p.name?<span className="partnerSlot" key={p.name}>{p.name}</span>:<span className="partnerSlot empty" key={`reserved-${i}`} aria-hidden="true"/>)}</div><p className="stripNote">Additional partnerships to be confirmed.</p></div></aside>}
