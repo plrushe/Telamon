@@ -12,5 +12,4 @@ return <aside className="strip" aria-label="Our partners"><div className="shell"
 {track.map((p,i)=><span className="partnerSlot" key={`${p.name}-${i}`}><img src={p.src} alt={p.name}/></span>)}
 </div>
 </div>
-<p className="stripNote">Additional partnerships to be confirmed.</p>
 </div></aside>}
