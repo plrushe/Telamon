@@ -4,7 +4,7 @@ const partners=[
 {name:"Zoho",src:"/images/partners/zoho.svg"},
 ];
 export function PartnersStrip(){
-const track=[...partners,...partners];
+const track=[...partners,...partners,...partners,...partners];
 return <aside className="strip" aria-label="Our partners"><div className="shell">
 <h2>OUR PARTNERS</h2>
 <div className="partnerCarousel">
